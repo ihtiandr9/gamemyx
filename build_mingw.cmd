@@ -19,6 +19,7 @@ if exist %~dp0Build\CMake.MinGW\CMakeCache.txt goto cmake_exists
 %~dp0Tools\cmake\bin\cmake ^
     -G "MinGW Makefiles" ^
     -DTARGET_SDL2=YES ^
+    -DCMAKE_MAKE_PROGRAM=%~dp0Tools/make/mingw32-make ^
     %~dp0Build
 if errorlevel 1 exit /B 1
 :cmake_exists
