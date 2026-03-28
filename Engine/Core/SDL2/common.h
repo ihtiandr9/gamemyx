@@ -5,7 +5,7 @@
 #ifndef ENGINE_SDL2_H
 #define ENGINE_SDL2_H
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #include <stdlib.h>
 #include <stdio.h>
 

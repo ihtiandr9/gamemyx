@@ -21,3 +21,5 @@ add_executable(Importer
     tileset.c
     util.c
     )
+
+target_link_libraries(Importer -lm)

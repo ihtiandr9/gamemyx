@@ -1,5 +1,6 @@
 #include "importer.h"
 #include "ezxml/ezxml.h"
+#include "limits.h"
 
 #define MAX_TILEMAPS 256
 #define MAX_TILESET_REFS 8

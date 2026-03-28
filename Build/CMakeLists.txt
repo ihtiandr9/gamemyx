@@ -226,7 +226,7 @@ target_link_libraries(Engine2 Engine)
 
 if(TARGET_SDL2)
     if(NOT WIN32)
-        target_link_libraries(Engine SDL2)
+        target_link_libraries(Engine SDL2::SDL2)
     elseif(MINGW)
         target_link_libraries(Engine
             "${sdl2_libpath}/libSDL2.a" setupapi imm32 winmm version)
@@ -274,7 +274,8 @@ if(TARGET_SDL2)
     )
 
     if(NOT WIN32)
-        target_link_libraries(Game SDL2::Main)
+        target_link_libraries(Game SDL2::SDL2)
+        message(NOTICE "NOT win build")
     elseif(MINGW)
         target_link_libraries(Game mingw32 "${sdl2_libpath}/libSDL2main.a" mingw32)
     else()

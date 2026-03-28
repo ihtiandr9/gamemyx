@@ -14,7 +14,7 @@ static void LoadSprites(const byte **p,
         outFlags[dir] = flags;
         if ((flags & NO_SPRITE) == 0) {
             if ((flags & REF_SPRITE) == 0)
-                outSprites[dir] = MYX_LoadAnimSprite(p);
+                outSprites[dir] = MYX_LoadAnimSprite((const void**)p);
             else {
                 ASSERT(**p < 4);
                 outMirror[dir] = *(*p)++;
