@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "/home/user/proj/sdl2lessons/gamemyx/Build",
+    "cmake.configureArgs": [
+        "-DTARGET_SDL2=YES"
+    ]
+}
