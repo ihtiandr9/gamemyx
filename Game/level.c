@@ -1,6 +1,7 @@
 #include "level.h"
 #include "character.h"
 #include "Data/data.h"
+#include "player.h"
 
 void MapObjectHandler(const MapObject* obj)
 {

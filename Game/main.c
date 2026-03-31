@@ -4,7 +4,7 @@
  */
 #include "engine.h"
 #include "character.h"
-#include "data/data.h"
+#include "Data/data.h"
 #include "level.h"
 
 void GameMain()
